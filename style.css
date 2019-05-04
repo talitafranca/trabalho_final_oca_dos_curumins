@@ -176,7 +176,12 @@ header{
 }
 @media(max-width:425px){
 	.containersecondmainBlock__subBlockParagraph{
-		font-size: 21px;
+	font-size: 21px;
+	}
+}
+@media(max-width: 320px){
+	.containersecondmainBlock__subBlockParagraph{
+	font-size: 17px;
 	}
 }
 .containersecondmain__image{
