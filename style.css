@@ -4,29 +4,63 @@
 	box-sizing: border-box;
 }
 
-header{
-	width:100%;
-	height:60vh;
-	background-color:pink;
+body{
+	display: flex;
 }
-@media(max-width:425px){
-	header{
-		height:90vh;
-	}
+.containerMenu{
+	width: 40%;	
+	background-color: /*black*/;
+}
+.containerMenu__block{
+	position: fixed;
+	width: 100%;
+	height: 70vh;
+}
+.containerMenu__blockimage{
+	width: 280px;
+	height: 230px;
+}
+.containerMenu__blocknav{
+	width: 20vh;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-top: 5vh;
+	padding-left: 8vh;
+}
+.containerMenu__blockparagrafo{
+
+}
+.containerHeader{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	padding-top: 20vh;
+	background-image: url(assets/fundo.png);
+	background-size: cover;	
+	background-repeat: no-repeat;
+}
+.containerHeader__block{
+	width: 55vh;
+	display: flex;
+	justify-content: center;
+}
+.containerHeader__blockparagrafo{
+	text-align: left;
 }
 .containerImagesPrincipal{
-	width:100%;
+	width: 100%;
+	background-color: white;
 	display: flex;
-	justify-content: flex-end;
+	padding-bottom: 80px;
 }
 .containerImagesPrincipal__block{
-	width:68%;
+	width: 100vh;
 	display: flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
+	justify-content:space-between;
 	position: relative;
-	bottom:110px;
-	right:50px;
 }
 @media(max-width:768px){
 	.containerImagesPrincipal__block{
@@ -41,9 +75,10 @@ header{
 	}
 }
 .containerImagesPrincipal__blockImage{
-	width:260px;
-	height:190px;
-	border-radius:10%;
+	width: 300px;
+	height: 250px;
+	padding: 20px;
+	border-radius: 20%;
 }
 @media(max-width:768px){
 	.containerImagesPrincipal__blockImage{
@@ -65,13 +100,12 @@ header{
 	width:100%;
 	display: flex;
 	flex-direction:column;
-	align-items:center;
+	padding-left: 12vh;
 }
-
 .containerfirstmainBlocktitle{
-	width:43%;
-	line-height: 200%;
+/*	line-height: 200%;*/
 	font-size:30px;
+	padding-bottom: 85px;
 }
 @media(max-width:768px){
 	.containerfirstmainBlocktitle{
@@ -79,14 +113,10 @@ header{
 		font-size:25px;
 	}
 }
-
 .containerfirstmain__block{
-	width:70%;
 	display: flex;
 	justify-content:space-around;
-	flex-wrap: wrap;
-	margin-left:18%;
-	margin-top: 4%;
+	flex-wrap: wrap;	
 }
 @media(max-width:768px){
 	.containerfirstmain__block{
@@ -95,11 +125,9 @@ header{
 	}
 }
 .containerfirstmain__blockSubBlock{
-	width:21%;
+	width:30vh;
 	height:25vh;
 	display: flex;
-	justify-content: center;
-	align-items:center;
 	flex-direction: column;
 	line-height: 400%;
 }
@@ -128,7 +156,6 @@ header{
 .containersecondmain{
 	width: 100%;
     display: flex;
-    justify-content: flex-end;
     margin-top: 4%;
 }
 .containersecondmainBlock{
