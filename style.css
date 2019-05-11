@@ -31,18 +31,18 @@ header{
 	}
 }
 .containerMenu__block{
-	width: 20%
+	/*width: 20%*/
 	height: 20vh;
 	/*background-color: black;*/
 	position: fixed;
 	top: 120px;
 }
 .containerMenu__blockimage{
-	width: 280px;
+	/*width: 280px;*/
 	height: 230px;
 }
 .containerMenu__blocknav{
-	width: 20%;
+	/*width: 20%;*/
 	height: 200px;
 	flex-direction: column;
 	padding-top: 5vh;
@@ -58,71 +58,54 @@ header{
 	align-self: center;
 	position: relative;
 	top: 47%;
-	left: 20%;
-/*	background-color: yellow;*/
+	left: 26%;
 }
 .containerHeader__paragrafo{
 	font-size: 1.3em;
 	text-align: left;
 }
 .containerImagesPrincipal{
-	width:100%;
 	display: flex;
 	justify-content: flex-end;
 }
 .containerImagesPrincipal__block{
-	width:68%;
+	width:70%;
 	display: flex;
-	justify-content:space-around;
+	justify-content:space-between;
+	align-items: flex-start;
 	flex-wrap:wrap;
 	position: relative;
-	bottom:110px;
+	bottom:87px;
 	right:50px;
 }
 @media(max-width:800px){
 	.containerImagesPrincipal__block{
-		width:90%;
-		/*flex-direction: column;*/
+		width: 90%;
+    	right: 26px;
 	}
 }
 @media(max-width:526px){
 	.containerImagesPrincipal__block{
-		width: 94%;
     	left:0px;
 	}
 }
 .containerImagesPrincipal__blockImage{
-	width:260px;
-	height:190px;
+	width:31%;
 	border-radius:10%;
-}
-@media(max-width:800px){
-	.containerImagesPrincipal__blockImage{
-		width: 28vw;
-		margin:5px;
-	}
 }
 @media(max-width:526px){
 	.containerImagesPrincipal__blockImage{
-		width:88%;
-		height:50vh;
+		width:90%;
+		margin:8px;
 	}	
 }
-@media(max-width: 325px){
-	.containerImagesPrincipal__blockImage{
-		height:250px;
-	}
-}
 .containerfirstmain{
-	width:100%;
 	display: flex;
 	flex-direction:column;
 	align-items:center;
 }
-
 .containerfirstmainBlocktitle{
 	width:35%;
-	line-height: 200%;
 	font-size:28px;
 	font-family: KorolevHeavy;
 }
@@ -138,61 +121,42 @@ header{
 		font-size:25px;
 	}
 }
-
 .containerfirstmain__block{
 	width:70%;
 	display: flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	flex-wrap: wrap;
 	margin-left:25%;
 	margin-top: 4%;
 }
 @media(max-width:768px){
 	.containerfirstmain__block{
-		width:78%;
+		justify-content:space-around;
 		margin-left:0;
 	}
 }
 .containerfirstmain__blockSubBlock{
 	width:21%;
-	height:25vh;
+	height:169px;
 	display: flex;
 	justify-content: center;
 	align-items:center;
 	flex-direction: column;
-	line-height: 400%;
-}
-@media(max-width:768px){
-	.containerfirstmain__blockSubBlock{
-		width:32%;
-	}
 }
 @media(max-width: 520px){
 	.containerfirstmain__blockSubBlock{
 		width:50%;
-		height: auto;
-	}
-}
-@media(max-width:325px){
-	.containerfirstmain__blockSubBlock{
-		line-height:200%;
+		height:128px;
 	}
 }
 .containerfirstmain__blockImage{
 	width: 80px;
-    height: 81px;
 }
 .containerfirstmain__blockParagraphs{
-	font-size:16px;
+	font-size:15px;
 	font-family: KorolevBold;
 }
-@media(max-width:325px){
-	.containerfirstmain__blockParagraphs{
-		font-size: 15px;
-	}
-}
 .containersecondmain{
-	width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-top: 4%;
@@ -203,17 +167,12 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 49px 64px 26px 70px;
+    padding:49px 14px 26px 70px;
     background-color: #006C1C;
 }
 @media(max-width:900px){
 	.containersecondmainBlock{
 		padding:40px 64px 0px 30px;
-	}
-}
-@media(max-width:800px){
-	.containersecondmainBlock{
-		width: 89%;
 	}
 }
 @media(max-width:768px){
@@ -231,17 +190,17 @@ header{
 }
 .containersecondmainBlock__subBlock{
 	width: 36%;
-    margin-top:3%;
+    margin-top:2%;
 }
 @media(max-width:629px){
 	.containersecondmainBlock__subBlock{
-		width: 100%;
+		width:80%;
     	margin-top: 0;
 	}
 }
 @media(max-width:350px){
 	.containersecondmainBlock__subBlock{
-		width:97vw;
+		width:100%;
 	}
 }
 .containersecondmainBlock__subBlockTitle{
@@ -258,22 +217,11 @@ header{
 }
 @media(max-width:922px){
 	.containersecondmainBlock__subBlockParagraph{
-		width:100%;
-		font-size: 16px;
-	}
-}
-@media(max-width:752px){
-	.containersecondmainBlock__subBlockParagraph{
-	font-size: 15px;
-	}
-}
-@media(max-width: 320px){
-	.containersecondmainBlock__subBlockParagraph{
-	font-size: 17px;
+		font-size: 15px;
 	}
 }
 .containersecondmain__image{
-	width: 365px;
+	width: 60%;
     height: 313px;
     border-radius: 8%;
     border: solid 11px #fff;
@@ -288,15 +236,9 @@ header{
 }
 @media(max-width: 629px){
 	.containersecondmain__image{
-		width: 400px;
-    	height: 254px;
+		width:90%;
+    	height:254px;
     	left: 0;
-	}
-}
-@media(max-width: 425px){
-	.containersecondmain__image{
-		width: 339px;
-    	height: 254px;
 	}
 }
 @media(max-width: 350px){
@@ -306,16 +248,19 @@ header{
 	}
 }
 .containerParceiros{
-	width: 100%;
+	width:100%;
 	display:flex;
 	align-items:center;
 	flex-direction: column;
 	padding: 142px 250px 0 0;
-	/*background-color: yellow;*/
 }
-
+@media(max-width:768px){
+	.containerParceiros{
+		padding: 142px 164px 0 0;
+	}
+}
 .containerParceirosTitle{
-	width:20%;
+	width:24%;
 	height:80px;
 	font-size:33px;
 	font-family:KorolevHeavy;
@@ -323,39 +268,51 @@ header{
 .containerParceiros__Block{
 	width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 371px;
 }
-@media(max-width:700px){
+@media(max-width:768px){
 	.containerParceiros__Block{
-		width:297px;
-		margin-left: 231px;
+		width:100%;
+		margin-left: 191px;
+	}
+}
+@media(max-width:375px){
+	.containerParceiros__Block{
+		margin-left: 115px;
 	}
 }
 .containerParceiros__Block__subBlock{
-	width: 15vw;
+	width:15vw;
 	height:189px;
 	font-size: 18px;
 	font-family:KorolevBold;
 	text-align: center;
 }
-
-@media(max-width:700px){
+@media(max-width:768px){
 	.containerParceiros__Block__subBlock{
-		width:137px;
+		width:152px;
+	}
+}
+@media(max-width:468px){
+	.containerParceiros__Block__subBlock{
+		width:102px;
 		font-size: 15px;
 	}
 }
-@media(max-width:620px){
+@media(max-width:375px){
 	.containerParceiros__Block__subBlock{
-		width:114px;
+		width:71px;
+		font-size: 13px;
 	}
 }
-@media(max-width:477px){
+@media(max-width:320px){
 	.containerParceiros__Block__subBlock{
-		width: 50%;
-    	height: auto;
+		width:53px;
+	}
+	.paragraphparceiros{
+		width: 33vw;
 	}
 }
 .containerParceiros__image{
@@ -386,7 +343,6 @@ header{
 .containerfooter__blockcontatos{
 	width: 30vw;
 	height:40vh;
-	background-color: /*black*/;
 	display:flex;
 	flex-direction:column;
 }
